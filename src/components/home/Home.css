@@ -1,0 +1,14 @@
+.home-container{
+    margin: 50px;
+}
+
+.total-count-container{
+    margin-bottom: 20px;
+}
+
+.total-count{
+    background-color: #e7e7e7;
+    color: black;
+    padding: 8px;
+    font-family: Arial;
+}
