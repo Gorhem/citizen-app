@@ -82,7 +82,7 @@ class CitizenFilter extends React.Component {
     render() {
       return (
         <div className="citizen-filter">
-            <div class="flex-container">
+            <div className="flex-container">
                 <Box sx={{
                         '& > :not(style)': { m: 1, width: '25ch' },
                     }}>
@@ -93,7 +93,7 @@ class CitizenFilter extends React.Component {
                         id="citizen-select"
                         value={this.state.isCitizen}
                         label="Citizen"
-                        onChange={this.handleIsCitizenChange}
+                        onChange={(e) => this.handleIsCitizenChange(e)}
                         >
                         <MenuItem value={'All'}>All</MenuItem>
                         <MenuItem value={true}>Citizen</MenuItem>
@@ -111,7 +111,7 @@ class CitizenFilter extends React.Component {
                         id="driving-select"
                         value={this.state.hasDrivingLicense}
                         label="Driving License"
-                        onChange={this.handleHasDrivingLicenseChange}
+                        onChange={(e) => this.handleHasDrivingLicenseChange(e)}
                         >
                         <MenuItem value={'All'}>All</MenuItem>
                         <MenuItem value={true}>Have</MenuItem>

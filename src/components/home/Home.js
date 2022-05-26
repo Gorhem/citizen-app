@@ -59,13 +59,13 @@ class Home extends React.Component {
     render() {
       return (
         <div className="home">
-            <div class="home-container">
-              <div class="total-count-container">
-                <label class="total-count">Total Citizen: {this.state.totalCount}</label>
-              </div>
-              <CitizenFilter search={this.search.bind(this)}></CitizenFilter>
-              <CitizenTable ref={this.citizenTableRef}></CitizenTable>
+          <div className="home-container">
+            <div className="total-count-container">
+              <label>Total Citizen: {this.state.totalCount}</label>
             </div>
+            <CitizenFilter search={this.search.bind(this)}></CitizenFilter>
+            <CitizenTable ref={this.citizenTableRef}></CitizenTable>
+          </div>
         </div>
       );
     }
